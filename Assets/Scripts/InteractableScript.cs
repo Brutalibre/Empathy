@@ -6,7 +6,7 @@ public class InteractableScript : MonoBehaviour {
 
     private SpriteRenderer rend;
     private Color baseCol;
-    public Color HighlightColor = new Color(255, 237, 0);
+    public Color HighlightColor = new Color(1, 0.929f, 0.0f);
    
 	// Use this for initialization
 	void Start () {
@@ -19,14 +19,14 @@ public class InteractableScript : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Cursor") {
             rend.color = HighlightColor;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Cursor")
         {
