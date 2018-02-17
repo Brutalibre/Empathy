@@ -7,6 +7,8 @@ public class InteractableScript : MonoBehaviour {
     private SpriteRenderer rend;
     private Color baseCol;
     public Color HighlightColor = new Color(1, 0.929f, 0.0f);
+
+    protected bool isColliding = false;
    
 	// Use this for initialization
 	void Start () {
@@ -23,6 +25,7 @@ public class InteractableScript : MonoBehaviour {
     {
         if (collision.tag == "Cursor") {
             rend.color = HighlightColor;
+            isColliding = true;
         }
     }
 
@@ -31,6 +34,7 @@ public class InteractableScript : MonoBehaviour {
         if (collision.tag == "Cursor")
         {
             rend.color = baseCol;
+            isColliding = false;
         }
     }
 }
