@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
 
-    public int HP = 20;
+    public float HP = 20;
 
 	// Use this for initialization
 	void Start () {

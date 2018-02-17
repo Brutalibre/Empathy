@@ -24,8 +24,9 @@ GameObject:
   - component: {fileID: 114612060130363618}
   - component: {fileID: 114985506129138634}
   - component: {fileID: 114373257720341996}
+  - component: {fileID: 60219822870963568}
   m_Layer: 0
-  m_Name: Interactive
+  m_Name: Talkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,12 +39,52 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1994547863287170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.5, y: -8.5, z: 0}
+  m_LocalPosition: {x: -24, y: -5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60219822870963568
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1994547863287170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 3}
+    newSize: {x: 2, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.53907394, y: 0.9206433}
+      - {x: 0.2024498, y: 1.4857926}
+      - {x: -0.27907372, y: 1.4907217}
+      - {x: -0.53868484, y: 0.82276964}
+      - {x: -0.41376686, y: 0.59099674}
+      - {x: -0.111961365, y: 0.5174322}
+      - {x: -0.112709045, y: -0.7798052}
+      - {x: -0.51148605, y: -0.9724288}
+      - {x: -0.50977516, y: -1.1634359}
+      - {x: -0.30773735, y: -1.4469442}
+      - {x: 0.37031937, y: -1.4373355}
+      - {x: 0.5529747, y: -1.0913277}
+      - {x: 0.107069016, y: -0.7601776}
+      - {x: 0.077890396, y: 0.51231}
+      - {x: 0.37532997, y: 0.5716963}
+      - {x: 0.49072266, y: 0.7450719}
 --- !u!60 &60295614251770782
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -60,7 +101,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 4}
+    oldSize: {x: 1.0625, y: 3}
     newSize: {x: 2, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -68,17 +109,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1, y: 1.8125}
-      - {x: 0.8125, y: 2}
-      - {x: -0.625, y: 2}
-      - {x: -0.875, y: 1.8125}
-      - {x: -0.875, y: 0.0625}
-      - {x: -0.75, y: -1.125}
-      - {x: -0.375, y: -1.1875}
-      - {x: 0.5625, y: -1.1875}
-      - {x: 0.6875, y: -1.0625}
-      - {x: 0.875, y: -0.0625}
-      - {x: 1, y: 0.5625}
+    - - {x: 0.53907394, y: 0.9206433}
+      - {x: 0.2024498, y: 1.4857926}
+      - {x: -0.27907372, y: 1.4907217}
+      - {x: -0.53868484, y: 0.82276964}
+      - {x: -0.41376686, y: 0.59099674}
+      - {x: -0.111961365, y: 0.5174322}
+      - {x: -0.112709045, y: -0.7798052}
+      - {x: -0.51148605, y: -0.9724288}
+      - {x: -0.50977516, y: -1.1634359}
+      - {x: -0.30773735, y: -1.4469442}
+      - {x: 0.37031937, y: -1.4373355}
+      - {x: 0.5529747, y: -1.0913277}
+      - {x: 0.107069016, y: -0.7601776}
+      - {x: 0.077890396, y: 0.51231}
+      - {x: 0.37532997, y: 0.5716963}
+      - {x: 0.49072266, y: 0.7450719}
 --- !u!114 &114373257720341996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6329a56af240874380337bd06e279e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightColor: {r: 1, g: 0.92941177, b: 0, a: 1}
+  HighlightColor: {r: 1, g: 0.929, b: 0, a: 1}
 --- !u!114 &114612060130363618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,7 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startOnAwake: 0
-  showWithDialog: []
+  showWithDialog:
+  - {fileID: 0}
   textUI: {fileID: 0}
   dialoger: 0
   dialogerUI: {fileID: 0}
@@ -112,7 +159,7 @@ MonoBehaviour:
   billboard: 1
   mainCamera: 1
   otherCamera: {fileID: 0}
-  txtToParse: {fileID: 4900000, guid: d7e424334723ddd4abc277f33bb283f5, type: 3}
+  txtToParse: {fileID: 4900000, guid: 886e1f6305e7f9443b2cbddcadde1ef3, type: 3}
   enableQuickSkip: 1
   callbackScript: {fileID: 0}
   callbackFunction: 
@@ -207,8 +254,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 3eb07696758ce574ab5fbb11af90ddba, type: 3}
+  m_SortingOrder: 7
+  m_Sprite: {fileID: 21300000, guid: 58f20eea4d7de584d9d6a23543697ffd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
