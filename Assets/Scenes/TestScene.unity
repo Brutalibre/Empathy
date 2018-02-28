@@ -4461,7 +4461,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 690747777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 0.02939, y: 0.02939, z: 0.02939}
   m_Children:
   - {fileID: 1998713568}
@@ -4471,7 +4471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 99.829, y: 129.787}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690747779
@@ -17439,7 +17439,7 @@ Prefab:
         type: 2}
       propertyPath: SteppingIn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 133915021}
     - target: {fileID: 114504256950980274, guid: 74b4f9430fd12fd4aba9dc26d3342d60,
         type: 2}
       propertyPath: SteppingIn.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -17464,7 +17464,7 @@ Prefab:
         type: 2}
       propertyPath: SteppingOut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 133915021}
     - target: {fileID: 114504256950980274, guid: 74b4f9430fd12fd4aba9dc26d3342d60,
         type: 2}
       propertyPath: SteppingOut.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
