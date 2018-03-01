@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Dog : MonoBehaviour {
 
+    public Palier[] Paliers;
+    public Animator Animator;
+    public string AnimationInt;
+    public int DefaultAnimationValue;
 
-    public Animator DogAnimator;
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,13 +19,13 @@ public class Dog : MonoBehaviour {
 		
 	}
 
-    public void ChangeAnimationToMad()
+   /* public void ChangeAnimationToMad()
     {
-        DogAnimator.SetBool("Close_Circle", true);
+        Animator.SetBool("Close_Circle", true);
     }
 
     public void ChangeAnimationToIdle()
     {
-        DogAnimator.SetBool("Close_Circle", false);
-    }
+        Animator.SetBool("Close_Circle", false);
+    }*/
 }

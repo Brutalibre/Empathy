@@ -68,7 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5b54d81ae624f45a79608c8c0c8c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TalkableScript: {fileID: 0}
+  HealableScript: {fileID: 0}
+  Character: {fileID: 0}
+  SpriteRend: {fileID: 0}
   SteppingIn:
     m_PersistentCalls:
       m_Calls: []
@@ -89,6 +91,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  StatesAndPaliers: []
 --- !u!212 &212322737277754756
 SpriteRenderer:
   m_ObjectHideFlags: 1
