@@ -4,13 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class Palier
-{
-    public float MinimumPercentage;
-    public float MaximumPercentage;
-}
-
-[System.Serializable]
 public class State
 {
     public int AnimationValue;
@@ -23,7 +16,7 @@ public class State
 public struct StateAndPalier
 {
     public State Etat;
-    public Palier Palier;
+    public Step Palier;
 }
 
 public class Circle : MonoBehaviour {

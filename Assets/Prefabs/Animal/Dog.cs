@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dog : MonoBehaviour {
 
-    public Palier[] Paliers;
+    public Step[] Paliers;
     public Animator Animator;
     public string AnimationInt;
     public int DefaultAnimationValue;

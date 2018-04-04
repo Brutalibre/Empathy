@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerWalkScript : MonoBehaviour {
-
-    Rigidbody2D rb;
+    
     public float PPU = 16;
     public float Speed = 4.0f;
     public float Treshold = 0.1f;
@@ -14,7 +13,6 @@ public class PlayerWalkScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        rb = GetComponent<Rigidbody2D>();
         soundScript = GetComponent<PlaySoundRandom>();
     }
 	
